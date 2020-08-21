@@ -1,4 +1,4 @@
-import { html, customElement, css, LitElement, property } from "lit-element";
+import { html, customElement, css, LitElement } from "lit-element";
 
 @customElement("nav-header")
 export class NavHeader extends LitElement {

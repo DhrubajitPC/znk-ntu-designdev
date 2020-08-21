@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "parcel build index.html",
-    "dev": "parcel index.html"
+    "dev": "yarn postbuild && parcel index.html",
+    "postbuild": "mkdir dist\\static && cp -r static dist"
   },
   "dependencies": {
     "lit-element": "^2.4.0"
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.10.5",
     "parcel": "^2.0.0-nightly.376",
+    "parcel-plugin-static-files-copy": "^2.5.0",
     "sass": "^1.26.10"
   }
 }

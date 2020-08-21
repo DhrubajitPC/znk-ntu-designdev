@@ -1,31 +1,42 @@
-import { LitElement, html, property, customElement } from "lit-element";
+import { LitElement, html, css, customElement } from "lit-element";
 import "./components/productcard";
-import data from "./assets/data.json";
-
-import image from "url:./assets/thepowerofone.svg";
+import data from "./static/data.json";
 
 @customElement("container-element")
 export class ContainerElement extends LitElement {
-  @property() name = "World";
   constructor() {
     super();
-    const { title, description, price, rating, img, reviewCount } = data[0];
-    this.title = title;
-    this.description = description;
-    this.price = price;
-    this.rating = rating;
-    this.reviewCount = reviewCount;
-    this.img = image;
+    this.data = data.map((d) => {
+      return {
+        ...d,
+        img: "/static/" + d.img,
+      };
+    });
+  }
+
+  static get styles() {
+    return css`
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 16px;
+      }
+    `;
   }
 
   render() {
-    return html`<product-card
-      title="${this.title}"
-      description="${this.description}"
-      price="${this.price}"
-      rating="${this.rating}"
-      image="${this.img}"
-      reviewCount="${this.reviewCount}"
-    ></product-card> `;
+    return html`<div class="container">
+      ${this.data.map(
+        (d) => html`<product-card
+          title="${d.title}"
+          description="${d.description}"
+          price="${d.price}"
+          rating="${d.rating}"
+          image="${d.img}"
+          reviewCount="${d.reviewCount}"
+        ></product-card>`
+      )}
+    </div>`;
   }
 }
