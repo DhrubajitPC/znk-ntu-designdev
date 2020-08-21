@@ -4,8 +4,8 @@ import data from "./assets/data.json";
 
 import image from "url:./assets/thepowerofone.svg";
 
-@customElement("simple-greeting")
-export class SimpleGreeting extends LitElement {
+@customElement("container-element")
+export class ContainerElement extends LitElement {
   @property() name = "World";
   constructor() {
     super();
