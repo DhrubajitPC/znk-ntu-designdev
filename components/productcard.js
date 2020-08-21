@@ -13,6 +13,16 @@ export class SimpleGreeting extends LitElement {
   @property() reviewCount;
   @property() image;
 
+  static get properties() {
+    return {
+      showDescription: { type: Boolean },
+    };
+  }
+  constructor() {
+    super();
+    this.showDescription = false;
+  }
+
   static get styles() {
     return css`
       .img {
@@ -36,7 +46,16 @@ export class SimpleGreeting extends LitElement {
       }
 
       .body {
-        padding: 5px;
+        padding: 15px;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .toggle {
+        color: #7e57c2;
+        cursor: pointer;
       }
     `;
   }
@@ -53,7 +72,18 @@ export class SimpleGreeting extends LitElement {
           </div>
           <div class="price">
             <p>SG$${this.price}</p>
-            <button-element>Quick Look</button-element>
+            <span class="toggle" @click="${() => {
+              this.showDescription = !this.showDescription;
+            }}""
+              >Quick Look</span
+            >
+          </div>
+          <div class="${!this.showDescription && "hidden"}">
+            <p>
+              ${this.description}
+            </p>
+            <button-element>Add to Cart</button-element
+            >
           </div>
         </div>
       </card-element>

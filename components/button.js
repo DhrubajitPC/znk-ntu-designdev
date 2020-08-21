@@ -11,11 +11,14 @@ export class Button extends LitElement {
         border: none;
         padding: 8px 16px;
         cursor: pointer;
+        font-weight: bold;
       }
     `;
   }
 
   render() {
-    return html`<button class="btn"><slot /></button>`;
+    return html`<button class="btn">
+      <slot />
+    </button>`;
   }
 }
