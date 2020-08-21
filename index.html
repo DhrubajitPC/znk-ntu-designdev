@@ -7,7 +7,39 @@
     <script src="./index.js" defer></script>
   </head>
   <body>
+    <style>
+      .subtitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .subtitle > h4 {
+        margin: 0;
+      }
+
+      .subtitle > select {
+        padding: 5px;
+        border-radius: 3px;
+        border: 1px solid #dddddd;
+      }
+
+      .header {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+
     <nav-header></nav-header>
+    <h1 class="header">Children's Book</h1>
+    <div class="subtitle">
+      <h4>Ages 3-5</h4>
+      <select>
+        <option value="sort">Sort</option>
+      </select>
+    </div>
     <container-element name="Everyone"></container-element>
   </body>
 </html>
