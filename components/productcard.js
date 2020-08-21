@@ -1,6 +1,7 @@
 import { LitElement, html, css, property, customElement } from "lit-element";
 import "./stars";
 import "./card";
+import "./button";
 
 @customElement("product-card")
 export class SimpleGreeting extends LitElement {
@@ -31,6 +32,7 @@ export class SimpleGreeting extends LitElement {
         font-size: 1rem;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
       }
 
       .body {
@@ -51,7 +53,7 @@ export class SimpleGreeting extends LitElement {
           </div>
           <div class="price">
             <p>SG$${this.price}</p>
-            <button>Quick Look</button>
+            <button-element>Quick Look</button-element>
           </div>
         </div>
       </card-element>
