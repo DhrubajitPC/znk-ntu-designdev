@@ -1,0 +1,21 @@
+{
+  "name": "ntu-design-dev-demo",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "targets": {
+    "main": false
+  },
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html"
+  },
+  "dependencies": {
+    "lit-element": "^2.4.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "parcel": "^2.0.0-nightly.376",
+    "sass": "^1.26.10"
+  }
+}

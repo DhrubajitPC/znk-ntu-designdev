@@ -1,0 +1,35 @@
+[
+  {
+    "img": "./assets/thepowerofone.svg",
+    "title": "The Power of One",
+    "rating": 5,
+    "price": 24.9,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, dolorum? Perferendis deleniti dignissimos soluta corporis deserunt ipsa repellat, illum distinctio consectetur vero hic mollitia harum cumque, rem excepturi, odit saepe.",
+    "reviewCount": 1213
+  },
+  {
+    "img": "./assets/ivelovedyousinceforever.svg",
+    "title": "I've Loved You Since Forever",
+    "rating": 4,
+    "price": 14.9,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, dolorum? Perferendis deleniti dignissimos soluta corporis deserunt ipsa repellat, illum distinctio consectetur vero hic mollitia harum cumque, rem excepturi, odit saepe.",
+    "reviewCount": 235
+  },
+
+  {
+    "img": "./assets/hedgehugs.sgv",
+    "title": "Hedgehugs",
+    "rating": 2,
+    "price": 15.9,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, dolorum? Perferendis deleniti dignissimos soluta corporis deserunt ipsa repellat, illum distinctio consectetur vero hic mollitia harum cumque, rem excepturi, odit saepe.",
+    "reviewCount": 97
+  },
+  {
+    "img": "./assets/whereveryougo",
+    "title": "Wherever You Go",
+    "rating": 4,
+    "price": 24.9,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, dolorum? Perferendis deleniti dignissimos soluta corporis deserunt ipsa repellat, illum distinctio consectetur vero hic mollitia harum cumque, rem excepturi, odit saepe.",
+    "reviewCount": 513
+  }
+]
