@@ -1,6 +1,6 @@
 [
   {
-    "img": "./assets/thepowerofone.svg",
+    "img": "thepowerofone.svg",
     "title": "The Power of One",
     "rating": 5,
     "price": 24.9,
@@ -8,7 +8,7 @@
     "reviewCount": 1213
   },
   {
-    "img": "./assets/ivelovedyousinceforever.svg",
+    "img": "ivelovedyousinceforever.svg",
     "title": "I've Loved You Since Forever",
     "rating": 4,
     "price": 14.9,
@@ -17,7 +17,7 @@
   },
 
   {
-    "img": "./assets/hedgehugs.sgv",
+    "img": "hedgehugs.svg",
     "title": "Hedgehugs",
     "rating": 2,
     "price": 15.9,
@@ -25,7 +25,7 @@
     "reviewCount": 97
   },
   {
-    "img": "./assets/whereveryougo",
+    "img": "whereveryougo.svg",
     "title": "Wherever You Go",
     "rating": 4,
     "price": 24.9,

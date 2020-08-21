@@ -1,14 +1,13 @@
-import { LitElement, css, html, property, customElement } from "lit-element";
+import { LitElement, html, css, property, customElement } from "lit-element";
 
 @customElement("star-ratings")
 export class StarRatings extends LitElement {
   @property() rating = 0;
-  @property() size = "30px";
 
   static get styles() {
     return css`
       .stars {
-        --star-size: 30px;
+        --star-size: 24px;
         --star-color: #fff;
         --star-background: #fc0;
         --percent: calc(var(--rating) / 5 * 100%);
