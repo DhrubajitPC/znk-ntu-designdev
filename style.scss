@@ -1,3 +1,5 @@
+$primary-color: #666666;
+
 @font-face {
   font-family: "Rubik";
   src: url("./static/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
@@ -11,9 +13,27 @@
   src: url("./static/fonts/Rubik-Italic-VariableFont_wght.ttf")
     format("truetype");
 }
+@font-face {
+  font-family: "Manjari";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./static/fonts/Manjari-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manjari";
+  font-style: normal;
+  font-weight: bold;
+  src: url("./static/fonts/Manjari-Bold.ttf") format("truetype");
+}
 
 body {
   font-family: "Rubik";
   font-size: 16px;
-  margin: auto 40px;
+  max-width: 1280px;
+  margin: auto;
+  color: $primary-color;
+}
+
+.container {
+  margin: 0 24px;
 }
