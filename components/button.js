@@ -5,9 +5,9 @@ export class Button extends LitElement {
   static get styles() {
     return css`
       .btn {
-        background: #f2eef9;
+        background: var(--btn-primary-bg);
         border-radius: 12px;
-        color: #7e57c2;
+        color: var(--btn-primary-text);
         border: none;
         padding: 8px 16px;
         cursor: pointer;

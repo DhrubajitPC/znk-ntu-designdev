@@ -32,7 +32,6 @@ export class SimpleGreeting extends LitElement {
 
       .title {
         font-size: 20px;
-        color: #666666;
         margin-top: 5px;
         margin-bottom: 5px;
       }
@@ -54,7 +53,7 @@ export class SimpleGreeting extends LitElement {
       }
 
       .toggle {
-        color: #7e57c2;
+        color: var(--btn-primary-text);
         cursor: pointer;
       }
     `;
