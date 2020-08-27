@@ -24,5 +24,21 @@
     "@storybook/addon-links": "^6.0.19",
     "@storybook/web-components": "^6.0.19",
     "snowpack": "^2.9.0"
+  },
+  "babel": {
+    "plugins": [
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ]
+    ]
   }
 }
