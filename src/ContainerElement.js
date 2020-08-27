@@ -1,6 +1,6 @@
 import { LitElement, html, css, customElement } from "lit-element";
 import "./components/productcard";
-import data from "./static/data.json";
+import data from "./data.json";
 
 @customElement("container-element")
 export class ContainerElement extends LitElement {
@@ -9,7 +9,7 @@ export class ContainerElement extends LitElement {
     this.data = data.map((d) => {
       return {
         ...d,
-        img: "/static/" + d.img,
+        img: "/assets/" + d.img,
       };
     });
   }
@@ -26,6 +26,7 @@ export class ContainerElement extends LitElement {
   }
 
   render() {
+    console.log(this.data);
     return html`<div class="container">
       ${this.data.map(
         (d) => html`<product-card

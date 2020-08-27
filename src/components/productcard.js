@@ -6,7 +6,6 @@ import "./button";
 @customElement("product-card")
 export class SimpleGreeting extends LitElement {
   @property() title;
-  @property() description;
   @property() price;
   @property() rating;
   @property() description;

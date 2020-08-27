@@ -1,7 +1,7 @@
-import "../components/productcard";
 import { storiesOf } from "@storybook/web-components";
 import { html } from "lit-html";
-import "../style.css";
+import "../../public/style.css";
+import "../components/productcard";
 import img from "./hedgehugs.svg";
 
 console.log(img);

@@ -1,8 +1,8 @@
-@import url("./colors.css");
+@import url("/colors.css");
 
 @font-face {
   font-family: "Rubik";
-  src: url("./static/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  src: url("assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -10,20 +10,19 @@
   font-family: "Rubik";
   font-style: italic;
   font-weight: normal;
-  src: url("./static/fonts/Rubik-Italic-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("assets/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {
   font-family: "Manjari";
   font-style: normal;
   font-weight: normal;
-  src: url("./static/fonts/Manjari-Regular.ttf") format("truetype");
+  src: url("assets/fonts/Manjari-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Manjari";
   font-style: normal;
   font-weight: bold;
-  src: url("./static/fonts/Manjari-Bold.ttf") format("truetype");
+  src: url("assets/fonts/Manjari-Bold.ttf") format("truetype");
 }
 
 body {

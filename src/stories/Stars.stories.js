@@ -1,7 +1,7 @@
-import "../components/stars";
 import { storiesOf } from "@storybook/web-components";
 import { html } from "lit-html";
-import "../style.css";
+import "../../public/style.css";
+import "../components/stars";
 
 storiesOf("Stars", module)
   .add("Ratings 2.4", () => html` <star-ratings rating="2.4" />`)

@@ -34,11 +34,11 @@ export class NavHeader extends LitElement {
       <div class="navbar">
         <h2 class="navbar-title">Flip for Joy</h2>
         <ul class="nav">
-          <li><img src="/static/search-icon.svg" alt="search" /></li>
+          <li><img src="/assets/search-icon.svg" alt="search" /></li>
           <li>Store</li>
           <li>FAQ</li>
           <li>Contact</li>
-          <li><img src="/static/cart-icon.svg" alt="cart" /></li>
+          <li><img src="/assets/cart-icon.svg" alt="cart" /></li>
         </ul>
       </div>
     `;
