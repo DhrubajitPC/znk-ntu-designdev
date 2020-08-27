@@ -27,7 +27,7 @@ export class SimpleGreeting extends LitElement {
     return css`
       .img {
         height: 300px;
-        width: 300px;
+        width: 100%;
       }
 
       .title {
